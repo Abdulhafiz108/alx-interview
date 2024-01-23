@@ -3,6 +3,7 @@
 A file cotaining my pascal's triangle funcion
 """
 
+
 def pascal_triangle(n):
     """
     A function that returns a list of Pascal’s triangle

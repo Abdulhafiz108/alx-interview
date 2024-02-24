@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This file contains function minOperations(n)
+"""
 from sympy import primefactors
 
 

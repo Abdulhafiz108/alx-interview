@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-'''This module contains function minOperations'''
 from sympy import primefactors
 
 

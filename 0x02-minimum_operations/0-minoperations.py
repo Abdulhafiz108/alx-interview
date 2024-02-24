@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """This module contains function minOperations"""
 from sympy import isprime
 

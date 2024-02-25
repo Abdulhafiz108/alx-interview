@@ -13,7 +13,7 @@ def minOperations(n):
     result in exactly n H characters in the file.
     """
     if (n == 0) or (n == 1):
-        return n
+        return 0
 
     number = n
     factors = []
@@ -22,6 +22,7 @@ def minOperations(n):
         number = number // smallest_divisor(number)
 
     return sum(factors)
+
 
 def smallest_divisor(n):
     """

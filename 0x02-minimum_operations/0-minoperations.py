@@ -5,6 +5,7 @@ can execute only two operations in this file: Copy All and Paste.
 Given a number n, write a method that calculates the fewest number
 of operations needed to result in exactly n H characters in the file.
 """
+from sympy import priimefactors
 
 
 def minOperations(n):

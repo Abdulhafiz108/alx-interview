@@ -12,14 +12,24 @@ def minOperations(n):
     This function returns the fewest number of operations needed to
     result in exactly n H characters in the file.
     """
-    from sympy import primefactors
     if (n == 0) or (n == 1):
         return n
 
     number = n
     factors = []
     while number > 1:
-        factors.append(primefactors(number)[0])
-        number = number / primefactors(number)[0]
+        factors.append(smallest_divisor(number))
+        number = number / smallest_divisor(number)
 
     return sum(factors)
+
+def smallest_divisor(n):
+    """Find the smallest integer greater than 1 that divides n without remainder."""    if n <= 1:
+        return n
+
+    if n == 2:
+        return 2
+
+    for i in range(2, n+1):
+        if n % i == 0:
+            return i

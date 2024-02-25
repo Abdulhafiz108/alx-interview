@@ -19,16 +19,16 @@ def minOperations(n):
     factors = []
     while number > 1:
         factors.append(smallest_divisor(number))
-        number = number / smallest_divisor(number)
+        number = number // smallest_divisor(number)
 
     return sum(factors)
 
 def smallest_divisor(n):
-    """Find the smallest integer greater than 1 that divides n without remainder."""    if n <= 1:
+    """
+    Find the smallest integer greater than 1 that divides n without remainder.
+    """
+    if n <= 1:
         return n
-
-    if n == 2:
-        return 2
 
     for i in range(2, n+1):
         if n % i == 0:

@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""This file contains function minOperations(n)"""
 from sympy import primefactors
 
 
-def minOperations(n) -> int:
+def minOperations(n):
     """
     This function returns the fewest number of operations needed to
     result in exactly n H characters in the file.
